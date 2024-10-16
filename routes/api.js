@@ -49,7 +49,7 @@ var apikey = req.query.apikey
 if (!q) return res.json(loghandler.notq)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkey}&query=${q}`)
+let anu = await fetchJson(`https://api.ryzendesu.vip/api/downloader/ytdl?url=${q}`)
 res.json({
 status: true,
 creator: `${creator}`,
